@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import Header from './components/Header/Header.js';
 import './App.scss';
 import PokemonList from './components/PokemonList/PokemonList.js'
@@ -9,7 +9,8 @@ import Pagination from './components/Pagination/Pagination.js';
 export default function App() {
 
   const [pokemon, setPokemon] = useState([])
-  const [pokemonUrlList, setPokemonUrlList] = useState([])
+  // const [pokemonUrlList, setPokemonUrlList] = useState([])
+  const [setPokemonUrlList] = useState([])
   const [currentPageUrl, setCurrentPageUrl] = useState("https://pokeapi.co/api/v2/pokemon")
   const [nextPageUrl, setNextPageUrl] = useState()
   const [prevPageUrl, setPrevPageUrl] = useState()
