@@ -1,0 +1,25 @@
+// @import './variables.scss';
+
+@mixin main-color{
+    color: #cc322a;
+}
+
+@mixin second-color {
+    color: #e6d596;
+}
+
+@mixin third-color {
+    color: #642c34;
+}
+
+@mixin fourth-color {
+    color: #b45c64;
+}
+
+@mixin fifth-color {
+    color: #a7b9d3;
+}
+
+@mixin sixth-color {
+    color: #4c3434;
+}
