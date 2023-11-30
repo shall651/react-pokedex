@@ -10,7 +10,6 @@ export default function App() {
 
   const [pokemon, setPokemon] = useState([])
   // const [pokemonUrlList, setPokemonUrlList] = useState([])
-  const [setPokemonUrlList] = useState([])
   const [currentPageUrl, setCurrentPageUrl] = useState("https://pokeapi.co/api/v2/pokemon")
   const [nextPageUrl, setNextPageUrl] = useState()
   const [prevPageUrl, setPrevPageUrl] = useState()
@@ -26,7 +25,7 @@ export default function App() {
         setNextPageUrl(res.data.next)
         setPrevPageUrl(res.data.previous)  
         setPokemon(res.data.results.map(p => p))
-        setPokemonUrlList(res.data.results.url.map(p => p))
+        // setPokemonUrlList(res.data.results.url.map(p => p))
       })
       return () => cancel()
   }, [currentPageUrl]);
